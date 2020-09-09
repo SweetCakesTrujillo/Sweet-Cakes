@@ -1,0 +1,61 @@
+/* Contactos */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.contactanos h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+   color: #fff;
+}
+
+.content-foo {
+    text-align: center; 
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* Estilo */
+.icon{
+    display:inline-block;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* Animación botón */
+.icon:hover{
+    background: #fff;
+    color:  #414141;
+}
+
+.icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+
+.content-foo p{
+    color: #fff;
+    margin-top: 10px;
+    
+}

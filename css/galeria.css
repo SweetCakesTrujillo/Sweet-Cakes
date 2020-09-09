@@ -1,0 +1,130 @@
+/* SUPER Galeria */
+
+.Menú{
+    background: #c4eaf1;
+}
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+.imagen-port {
+    width: 24%;
+    margin-bottom: 10px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+    
+}
+
+/* Estilo de las imágenes */
+.imagen-port a > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 6px 0  rgba(0, 0, 0, .5);
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s;
+}
+
+
+
+/* HOVERS GALERIA */
+
+/* Animaciones */
+.imagen-port:hover a > img{
+    filter: blur(2px);
+    transform: rotate(-10deg) scale(1.3);
+    z-index: -1;
+}
+
+.hover-galeria{
+    /* Posición y tamaño  */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    top: 0;
+    /* Inicial */
+    transform: scale(0);
+    /* Estilo */
+    background: rgba(70, 224, 252, 0.7);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform .5s;
+    border-radius: 20px;
+}
+
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* LIGHT BOX */
+
+.lightbox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    transition: transform .3s ease-in-out;
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.lightbox img{
+    width: 75vh;
+    max-height: 70vh;
+}
+
+.lightbox:target{
+    transform: scale(1);
+}
+
+.close{
+    z-index: 75;
+    cursor: pointer;
+    color: #f2f2f2;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    background: #8d60f7;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.next{
+    display: block;
+    background: #8d60f7;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+}

@@ -1,0 +1,108 @@
+/* Header */
+
+.menu-boton{
+    /* Posición estática del botón */
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 1;
+    /* Color y tamaño */
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    /* Estilo y animaciones */
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .4);
+}
+
+.menu-boton:hover{
+    background: #d3d0d0; 
+}
+
+header{
+    /* Espacio encabezado */
+    width: 100%;
+    height: 600px;
+    /* Degradado y foto portada*/
+    background: -webkit-linear-gradient(to right, hsla(356, 90%, 64%, 0.644), hsla(280, 78%, 69%, 0.644), hsla(191, 86%, 49%, 0.644)), url(../img/portada.jpg);  
+    background: linear-gradient(to right, hsla(356, 90%, 64%, 0.644), hsla(280, 78%, 69%, 0.644), hsla(191, 86%, 49%, 0.644)), url(../img/portada.jpg);
+    /* Posición estática */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.menu-desplegable{
+    /* Tamaño y espacio */
+    position: fixed;
+    text-align: right;
+    width: 30vw;
+    height: 100%;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    /* Degradado */
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    /* Centrar elementos */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* Animación */
+    transform: translate(110%);
+    transition: transform .3s ease-in-out;
+    
+}
+
+.menu-desplegable > a{
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu-desplegable > a:hover{
+    text-decoration: underline;
+}
+
+.spread{
+    transform: translate(0%);
+}
+
+/* Logo y textos del encabezado */
+header .textos-header{
+    /* Márgenes */
+    display: flex;
+    align-items: center;
+    /* Tamaño y espacio */
+    height: 430px;
+    width: 100%;
+    /* Centro */
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.cupcake{
+    width: 20%;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+}
